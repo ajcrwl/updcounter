@@ -51,6 +51,7 @@
 	    url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRWMHnabbMD9TsX9NCrSvuox99zkx3sg4YTgZE__ZLyb3KOp9V7U_flYedCYqodWS19xQmZkmsqixv_/pub?gid=633552009&single=true&output=csv",
 	    dataType: 'text',
 	    function( data ) {
+		    console.log(data);
 		  $( "#in-code" ).innerHTML = 'return {"title": "Прогресс рисовача апдейта:","text": "'+data+'"};'
 		}
 	});
